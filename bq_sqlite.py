@@ -6,7 +6,7 @@ from sqlalchemy import create_engine
 import pandas as pd
 
 # Connect to the SQLite db
-engine = create_engine('/home/plemya/airflow/airflow.db')
+engine = create_engine('sqlite:////home/plemya/airflow/airflow.db')
 
 default_args = {
     'owner': 'airflow',
@@ -42,4 +42,3 @@ store_data = PythonOperator(
  )
 
 fetch_data >> store_data
-#change done
