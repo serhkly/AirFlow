@@ -37,7 +37,7 @@ def print_value(ti):
 
 
 with DAG(
-    dag_id = 'cross_task_communication',
+    dag_id = 'cross_task_communication_v2',
     description = 'Cross-task communication with XCom',
     default_args = default_args,
     start_date = days_ago(1),
